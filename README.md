@@ -13,6 +13,14 @@ DADCUNet is a deep learning architecture designed for high-precision building ex
 ## Dataset
 The model was evaluated using a high-resolution urban building dataset from cities like Beijing, Shanghai, Shenzhen, and Wuhan, consisting of 7,260 image patches with 63,886 labeled buildings. This dataset includes MS COCO 2017 formatted annotation files and binary building masks.You can download the dataset in https://www.scidb.cn/en/detail?dataSetId=806674532768153600 with download link https://china.scidb.cn/download?fileId=605eb02f7da87f2745b580b3&traceId=effefb13-57d8-45c6-9f87-62d24fabc8dc.
 
+@article{Wu2021ADO,
+  title={A dataset of building instances of typical cities in China},
+  author={Kaishun Wu and Daoyuan Zheng and Yanling Chen and Linyun Zeng and Jiahui Zhang and Shenghua Chai and Wenjie Wu and Yongliang Yang and Shengwen Li and Yuanyuan Liu and Fang Fang},
+  journal={China Scientific Data},
+  year={2021},
+  url={https://api.semanticscholar.org/CorpusID:273593711}
+}
+
 ## Installation
 
 ### Requirements
