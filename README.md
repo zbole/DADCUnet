@@ -11,7 +11,7 @@ DADCUNet is a deep learning architecture designed for high-precision building ex
 - **Decoder**: Refines the extracted features using attention mechanisms to model spatial and channel dependencies.
 
 ## Dataset
-The model was evaluated using a high-resolution urban building dataset from cities like Beijing, Shanghai, Shenzhen, and Wuhan, consisting of 7,260 image patches with 63,886 labeled buildings. This dataset includes MS COCO 2017 formatted annotation files and binary building masks.
+The model was evaluated using a high-resolution urban building dataset from cities like Beijing, Shanghai, Shenzhen, and Wuhan, consisting of 7,260 image patches with 63,886 labeled buildings. This dataset includes MS COCO 2017 formatted annotation files and binary building masks.We will upload the relevent dataset on huggingface soon.
 
 ## Installation
 
@@ -25,18 +25,14 @@ The model was evaluated using a high-resolution urban building dataset from citi
 ### Installation Steps
 1. Clone this repository:
 
-git clone https://github.com/yourusername/DADCUNet.git
-cd DADCUNet
+git clone https://github.com/zbole/DADCUNet.git
+cd DADCUNet/ourmodel
 
 2. Install required dependencies:
 
 3. Ensure that you have the dataset (building patches) ready in the required format.
 
 4. Run the model:
-
-## Usage
-1. **Training**: To train the model on a custom dataset, use the following command:
-2. **Inference**: To run inference on new images, use:
 
 ## Evaluation Metrics
 The model is evaluated based on the following standard metrics:
@@ -49,9 +45,6 @@ DADCUNet outperforms existing methods such as TransUnet, UNetX, and DeepLabV3+ a
 - **Accuracy**: +1.75% over TransUnet
 - **F1 Score**: +1.8 over TransUnet
 - **mIoU**: +3.6 over TransUnet
-
-## Ablation Studies
-Ablation studies indicate that both the **Dual-Attention** and **DCFF** modules contribute significantly to improving model performance, particularly in handling building edges, complex rooftops, and small target areas in high-density urban environments.
 
 ## Conclusion
 DADCUNet provides a powerful solution for automatic building extraction in remote sensing images, with superior performance in urban planning, post-disaster assessment, and environmental monitoring tasks. The introduction of deformable convolution and dual-attention mechanisms enables the model to effectively handle complex building structures, urban clutter, and dynamic environments, setting a new state-of-the-art in the field.
