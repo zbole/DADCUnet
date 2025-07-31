@@ -1,4 +1,48 @@
-# DADCUNet: Dual-Attention Deformable Convolution UNet for Building Extraction
+<img width="1170" height="570" alt="图片2" src="https://github.com/user-attachments/assets/5542b750-e05f-4d28-86b1-6afc1ccab64e" /># DADCUNet: Dual-Attention Deformable Convolution UNet for Building Extraction
+
+## Results
+DADCUNet outperforms existing methods such as TransUnet, UNetX, and DeepLabV3+ across multiple datasets, particularly in complex urban environments. The model achieved significant improvements in:
+- **Accuracy**: +1.75% over TransUnet
+- **F1 Score**: +1.8 over TransUnet
+- **mIoU**: +3.6 over TransUnet
+
+### Table 1: Results on the Shanghai Dataset
+
+| Model      | Accuracy | F1 Score | mIoU   |
+|------------|----------|----------|--------|
+| unet+      | 0.903419 | 0.901416 | 0.746649 |
+| SWIN       | 0.904613 | 0.903195 | 0.751363 |
+| unetx      | 0.912110 | 0.911162 | 0.769354 |
+| deeplabv3+ | 0.920852 | 0.918726 | 0.784148 |
+| TransUNet  | 0.932983 | 0.932559 | 0.832544 |
+| DADCUNet   | 0.945117 | 0.944509 | 0.844489 |
+
+### Table 2: Results on the Wuhan Dataset
+
+| Model      | Accuracy | F1 Score | mIoU   |
+|------------|----------|----------|--------|
+| unetx      | 0.878965 | 0.876206 | 0.661317 |
+| unet+      | 0.897243 | 0.892224 | 0.691939 |
+| TransUNet  | 0.901731 | 0.897117 | 0.703300 |
+| SWIN       | 0.902534 | 0.899313 | 0.705624 |
+| deeplabv3+ | 0.913923 | 0.912183 | 0.742725 |
+| DADCUNet   | 0.923238 | 0.921149 | 0.763816 |
+
+### Table 3: Ablation Study Results
+
+| Model Variant | Dataset | Accuracy | Δ% | F1 Score | Δ% | mIoU   | Δ% |
+|----------------|---------|----------|----|----------|----|--------|----|
+| w/o DA         | Shanghai| 0.934477 | -1.1| 0.934570 | -1.1| 0.821635 | -2.7 |
+| w/o DCFF       | Shanghai| 0.936388 | -0.9| 0.935477 | -1.0| 0.821759 | -2.7 |
+| Full           | Shanghai| 0.945117 | -  | 0.944509 | -  | 0.844489 | -  |
+| w/o DA         | Wuhan   | 0.918216 | -0.5| 0.916107 | -0.5| 0.751541 | -1.6 |
+| w/o DCFF       | Wuhan   | 0.919191 | -0.4| 0.917784 | -0.4| 0.757131 | -0.9 |
+| Full           | Wuhan   | 0.923238 | -  | 0.921149 | -  | 0.763816 | -  |
+
+<img width="965" height="918" alt="图片1" src="https://github.com/user-attachments/assets/f89c2540-0045-4594-8b84-e6b9658dcd00" />
+
+<img width="1144" height="309" alt="图片3" src="https://github.com/user-attachments/assets/6bb81006-34e6-4105-ad1d-1207d5bc46f9" />
+
 
 ## Overview
 DADCUNet is a deep learning architecture designed for high-precision building extraction from complex urban remote sensing images. This method introduces a novel combination of deformable convolution, dual-attention mechanisms, and multi-scale feature fusion to improve building extraction performance in challenging urban environments. By utilizing key modules like the Auxiliary Encoder, Main Encoder, and Decoder, DADCUNet captures fine details, addresses scene diversity, high-density complexity, and interference from urban roads and vehicles, providing enhanced robustness for building extraction tasks.
