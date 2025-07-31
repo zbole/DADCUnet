@@ -1,5 +1,4 @@
-<img width="1170" height="570" alt="图片2" src="https://github.com/user-attachments/assets/5542b750-e05f-4d28-86b1-6afc1ccab64e" /># DADCUNet: Dual-Attention Deformable Convolution UNet for Building Extraction
-
+# DADCUNet: Dual-Attention Deformable Convolution UNet for Building Extraction
 ## Results
 DADCUNet outperforms existing methods such as TransUnet, UNetX, and DeepLabV3+ across multiple datasets, particularly in complex urban environments. The model achieved significant improvements in:
 - **Accuracy**: +1.75% over TransUnet
@@ -40,7 +39,7 @@ DADCUNet outperforms existing methods such as TransUnet, UNetX, and DeepLabV3+ a
 | Full           | Wuhan   | 0.923238 | -  | 0.921149 | -  | 0.763816 | -  |
 
 <img width="965" height="918" alt="图片1" src="https://github.com/user-attachments/assets/f89c2540-0045-4594-8b84-e6b9658dcd00" />
-
+<img width="1170" height="570" alt="图片2" src="https://github.com/user-attachments/assets/5542b750-e05f-4d28-86b1-6afc1ccab64e" />
 <img width="1144" height="309" alt="图片3" src="https://github.com/user-attachments/assets/6bb81006-34e6-4105-ad1d-1207d5bc46f9" />
 
 
