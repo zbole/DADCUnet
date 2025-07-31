@@ -11,7 +11,7 @@ DADCUNet is a deep learning architecture designed for high-precision building ex
 - **Decoder**: Refines the extracted features using attention mechanisms to model spatial and channel dependencies.
 
 ## Dataset
-The model was evaluated using a high-resolution urban building dataset from cities like Beijing, Shanghai, Shenzhen, and Wuhan, consisting of 7,260 image patches with 63,886 labeled buildings. This dataset includes MS COCO 2017 formatted annotation files and binary building masks.We will upload the relevent dataset on huggingface soon.
+The model was evaluated using a high-resolution urban building dataset from cities like Beijing, Shanghai, Shenzhen, and Wuhan, consisting of 7,260 image patches with 63,886 labeled buildings. This dataset includes MS COCO 2017 formatted annotation files and binary building masks.You can download the dataset in https://www.scidb.cn/en/detail?dataSetId=806674532768153600 with download link https://china.scidb.cn/download?fileId=605eb02f7da87f2745b580b3&traceId=effefb13-57d8-45c6-9f87-62d24fabc8dc.
 
 ## Installation
 
