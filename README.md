@@ -38,20 +38,10 @@ DADCUNet outperforms existing methods such as TransUnet, UNetX, and DeepLabV3+ a
 | w/o DCFF       | Wuhan   | 0.919191 | -0.4| 0.917784 | -0.4| 0.757131 | -0.9 |
 | Full           | Wuhan   | 0.923238 | -  | 0.921149 | -  | 0.763816 | -  |
 
-<img width="965" height="918" alt="图片1" src="https://github.com/user-attachments/assets/f89c2540-0045-4594-8b84-e6b9658dcd00" />
-<img width="1170" height="570" alt="图片2" src="https://github.com/user-attachments/assets/5542b750-e05f-4d28-86b1-6afc1ccab64e" />
-<img width="1144" height="309" alt="图片3" src="https://github.com/user-attachments/assets/6bb81006-34e6-4105-ad1d-1207d5bc46f9" />
-
 
 ## Overview
 DADCUNet is a deep learning architecture designed for high-precision building extraction from complex urban remote sensing images. This method introduces a novel combination of deformable convolution, dual-attention mechanisms, and multi-scale feature fusion to improve building extraction performance in challenging urban environments. By utilizing key modules like the Auxiliary Encoder, Main Encoder, and Decoder, DADCUNet captures fine details, addresses scene diversity, high-density complexity, and interference from urban roads and vehicles, providing enhanced robustness for building extraction tasks.
 
-## Key Features
-- **Deformable-Convolution Fusion Feature (DCFF) Module**: This module leverages deformable convolution to adaptively capture irregular building shapes and handle spatial variations.
-- **Dual-Attention Mechanism (DANet)**: This mechanism applies both position and channel attention to improve feature representation and capture global context.
-- **Improved R Block**: Replaces traditional Transformer structures to enhance the model's learning capability with GateMLP and Dual-Attention techniques.
-- **Auxiliary Encoder & Main Encoder**: These encoders perform multi-scale feature extraction, fusion, and complementarity of features to improve model accuracy.
-- **Decoder**: Refines the extracted features using attention mechanisms to model spatial and channel dependencies.
 
 ## Dataset
 The model was evaluated using a high-resolution urban building dataset from cities like Beijing, Shanghai, Shenzhen, and Wuhan, consisting of 7,260 image patches with 63,886 labeled buildings. This dataset includes MS COCO 2017 formatted annotation files and binary building masks.You can download the dataset in https://www.scidb.cn/en/detail?dataSetId=806674532768153600 with download link https://china.scidb.cn/download?fileId=605eb02f7da87f2745b580b3&traceId=effefb13-57d8-45c6-9f87-62d24fabc8dc.
@@ -83,7 +73,7 @@ cd DADCUNet/ourmodel
 
 3. Ensure that you have the dataset (building patches) ready in the required format.
 
-4. Run the model:
+4. Run the model
 
 ## Evaluation Metrics
 The model is evaluated based on the following standard metrics:
