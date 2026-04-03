@@ -90,12 +90,3 @@ DADCUNet outperforms existing methods such as TransUnet, UNetX, and DeepLabV3+ a
 ## Conclusion
 DADCUNet provides a powerful solution for automatic building extraction in remote sensing images, with superior performance in urban planning, post-disaster assessment, and environmental monitoring tasks. The introduction of deformable convolution and dual-attention mechanisms enables the model to effectively handle complex building structures, urban clutter, and dynamic environments, setting a new state-of-the-art in the field.
 
-## Citation
-If you use this code or dataset in your work, please cite the following paper:
-@article{yourpaper2025,
-title={DADCUNet: Dual-Attention Deformable Convolution UNet for Building Extraction},
-author={Bole Zhang},
-journal={NotAvailableNow},
-year={2025},
-url={NotAvailableNow}
-}
